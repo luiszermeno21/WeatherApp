@@ -1,0 +1,13 @@
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\Proxy.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\RestSharp.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\Proxy.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\RestSharp.xml
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

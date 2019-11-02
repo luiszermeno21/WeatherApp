@@ -1,0 +1,15 @@
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\BusinnesLogicLayer.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\BusinnesLogicLayer.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\Proxy.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\RestSharp.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\Proxy.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\RestSharp.xml
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\obj\Debug\BusinnesLogicLayer.csprojAssemblyReference.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\obj\Debug\BusinnesLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\obj\Debug\BusinnesLogicLayer.csproj.CopyComplete
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\obj\Debug\BusinnesLogicLayer.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\BusinnesLogicLayer\obj\Debug\BusinnesLogicLayer.pdb

@@ -1,0 +1,9 @@
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\bin\Debug\Proxy.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\bin\Debug\Proxy.pdb
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\bin\Debug\RestSharp.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\bin\Debug\RestSharp.xml
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\obj\Debug\Proxy.csprojAssemblyReference.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\obj\Debug\Proxy.csproj.CopyComplete
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\obj\Debug\Proxy.dll
+C:\Users\Luis Zermeño\source\repos\ExamenParcial2\Proxy\obj\Debug\Proxy.pdb
