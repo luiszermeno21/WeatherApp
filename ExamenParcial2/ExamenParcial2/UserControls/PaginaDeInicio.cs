@@ -67,7 +67,7 @@ namespace ExamenParcial2.UserControls
             dataGridView2.DataSource = typeof(List<Lista>);
             dataGridView2.DataSource = ciudades;
             dataGridView2.Update();
-            dataGridView2.Refresh()
+            dataGridView2.Refresh();
         }
     }
 }
