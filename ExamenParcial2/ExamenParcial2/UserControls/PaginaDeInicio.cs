@@ -63,6 +63,11 @@ namespace ExamenParcial2.UserControls
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             _service.DeleteCity(ciudades[e.RowIndex].name);
+            dataGridView2.DataSource = new BindingSource(ciudades, null);
+            dataGridView2.DataSource = typeof(List<Lista>);
+            dataGridView2.DataSource = ciudades;
+            dataGridView2.Update();
+            dataGridView2.Refresh()
         }
     }
 }
