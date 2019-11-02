@@ -10,13 +10,14 @@ using System.Windows.Forms;
 using DataAccessLayer;
 using System.Configuration;
 using Proxy.Models;
+using Proxy.Services;
 
 namespace ExamenParcial2.UserControls
 {
     public partial class PaginaDeInicio : UserControl
     {
         private static ADSSingleton _service;
-        List<Lista> ciudadesbuscadas;
+        List<RootObject> ciudadesbuscadas;
         List<Lista> ciudades;
         public PaginaDeInicio()
         {
@@ -24,8 +25,9 @@ namespace ExamenParcial2.UserControls
             var connectionString = ConfigurationManager.ConnectionStrings["SQLConnection"].ToString();
             _service = ADSSingleton.GetInstance(connectionString);
             ciudades = new List<Lista>();
+            ciudadesbuscadas = new List<RootObject>();
             dataGridView1.DataSource = new BindingSource(ciudadesbuscadas, null);
-            dataGridView1.DataSource = typeof(List<Lista>);
+            dataGridView1.DataSource = typeof(List<RootObject>);
             dataGridView1.DataSource = ciudadesbuscadas;
             dataGridView2.DataSource = new BindingSource(ciudades, null);
             dataGridView2.DataSource = typeof(List<Lista>);
@@ -35,21 +37,24 @@ namespace ExamenParcial2.UserControls
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Lista aux = new Lista();
+            RootObject aux = new RootObject();
             aux = ciudadesbuscadas[e.RowIndex];
-            ciudades.Add(aux);
-            dataGridView2.DataSource = new BindingSource(ciudadesbuscadas, null);
+            ciudades.Add(_service.UnaCiudad(aux.name));
+            dataGridView2.DataSource = new BindingSource(ciudades, null);
             dataGridView2.DataSource = typeof(List<Lista>);
-            dataGridView2.DataSource = ciudadesbuscadas;
+            dataGridView2.DataSource = ciudades;
             dataGridView2.Update();
             dataGridView2.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ciudadesbuscadas = _service.GetCity(textBox1.Text);
+            IProxy proxy = new CProxy();
+            ciudadesbuscadas = proxy.paises();
+            foreach (RootObject a in ciudadesbuscadas)
+                _service.AddCapitales(a);
             dataGridView1.DataSource = new BindingSource(ciudadesbuscadas, null);
-            dataGridView1.DataSource = typeof(List<Lista>);
+            dataGridView1.DataSource = typeof(List<RootObject>);
             dataGridView1.DataSource = ciudadesbuscadas;
             dataGridView1.Update();
             dataGridView1.Refresh();
@@ -57,7 +62,7 @@ namespace ExamenParcial2.UserControls
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            _service.DeleteCity(ciudades[e.RowIndex].name);
         }
     }
 }

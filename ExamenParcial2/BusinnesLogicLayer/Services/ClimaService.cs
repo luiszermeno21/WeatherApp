@@ -36,7 +36,7 @@ namespace BusinnesLogicLayer.Services
         {
             try
             {
-                return _dataService.DeleteCity(nombre) ? "Amigo Delete Successfully" : "Error in delete Amigo";
+                return _dataService.DeleteCity(nombre) ? "City Delete Successfully" : "Error in deleteing City";
             }
             catch (Exception e)
             {

@@ -367,5 +367,61 @@ namespace DataAccessLayer
 
             return result;
         }
+
+        public bool AddCapitales(RootObject objeto)
+        {
+            var result = false;
+            try
+            {
+                if (_client.Open())
+                {
+                    var command = new SqlCommand
+                    {
+                        Connection = _client.Conecction,
+                        CommandText = "addcapitales",
+                        CommandType = CommandType.StoredProcedure
+                    };
+                    var par1 = new SqlParameter("@nombre", SqlDbType.NVarChar)
+                    {
+                        Direction = ParameterDirection.Input,
+                        Value = objeto.name
+                    };
+                    var par2 = new SqlParameter("@capital", SqlDbType.NVarChar)
+                    {
+                        Direction = ParameterDirection.Input,
+                        Value = objeto.capital
+                    };
+                    var par3 = new SqlParameter("@region", SqlDbType.NVarChar)
+                    {
+                        Direction = ParameterDirection.Input,
+                        Value = objeto.region
+                    };
+
+                    var par4 = new SqlParameter("@haserror", SqlDbType.Bit)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+
+                    command.Parameters.Add(par1);
+                    command.Parameters.Add(par2);
+                    command.Parameters.Add(par3);
+                    command.Parameters.Add(par4);
+
+                    command.ExecuteNonQuery();
+
+                    result = !Convert.ToBoolean(command.Parameters["@haserror"].Value.ToString());
+                }
+            }
+            catch
+            {
+                // ignored
+            }
+            finally
+            {
+                _client.Close();
+            }
+
+            return result;
+        }
     }
 }

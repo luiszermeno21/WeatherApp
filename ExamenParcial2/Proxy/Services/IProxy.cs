@@ -9,5 +9,6 @@ namespace Proxy.Services
     {
         Lista weather(string name);
         RootObject forecast(string name);
+        List<RootObject> paises();
     }
 }
